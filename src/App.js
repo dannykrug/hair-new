@@ -1,25 +1,22 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import SalonContainer from './components/SalonContainer'
+import NavBar from './components/NavBar'
+import appointments from './data/appointments'
+import users from './data/users'
 
 class App extends Component {
+
+  state = {
+    users: users,
+    appointments:appointments
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+      <NavBar/>
+      Hair Salon App 2.0
+      <SalonContainer users={this.state.users} appointments={this.state.appointments}/>
       </div>
     );
   }
