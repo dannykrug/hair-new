@@ -4,6 +4,8 @@ import NavBar from './components/NavBar'
 import appointments from './data/appointments'
 import users from './data/users'
 
+import {BrowserRouter as Router, Route, NavLink} from 'react-router-dom'
+
 class App extends Component {
 
   state = {
