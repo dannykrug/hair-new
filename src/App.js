@@ -16,7 +16,6 @@ class App extends Component {
   render() {
     return (
       <div>
-      <NavBar/>
       Hair Salon App 2.0
       <SalonContainer users={this.state.users} appointments={this.state.appointments}/>
       </div>
