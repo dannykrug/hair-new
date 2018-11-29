@@ -6,6 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import {BrowserRouter as Router, Route, NavLink} from 'react-router-dom'
 import NavBar from '../src/components/NavBar'
 import NewApptContainer from '../src/components/NewApptContainer'
+import Login from '../src/components/Login'
 
 
 ReactDOM.render((
@@ -14,6 +15,7 @@ ReactDOM.render((
     <NavBar/>
     <Route exact path='/' component={App}/>
     <Route exact path='/newappt' component={NewApptContainer}/>
+    <Route exact path='/stylist-login' component={Login}/>
   </div>
   </Router>),
   document.getElementById('root'));
