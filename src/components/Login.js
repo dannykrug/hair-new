@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+const UserURL = 'http://localhost:3002/users'
 
 export default class Login extends Component {
 
@@ -19,15 +20,15 @@ export default class Login extends Component {
   const password = this.state.password
   console.log('username', username, 'password', password)
   let data = {username, password}
-  // fetch(SalonURL, {
-  //   method:"POST",
-  //   headers: {
-  //     Authorization: `Bearer <token>`
-  //   },
-  //   body: JSON.stringify(data)
-  // })
-  // .then(res => res.json())
-  // .then(console.log)
+  fetch(UserURL, {
+    method:"POST",
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  })
+  .then(res => res.json())
+  .then(console.log)
 
   }
 
