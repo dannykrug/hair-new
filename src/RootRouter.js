@@ -16,7 +16,36 @@ class RootRouter extends Component {
   state = {
     username:'',
     password:'',
-    user:{}
+    user:{
+      appointments: [{
+        appointment: {
+        approved: true,
+        created_at: "",
+        date: null,
+        email: "",
+        first_name: "",
+        id: 1,
+        inspo_pic: "",
+        last_name: "",
+        phone: "",
+        service: "",
+        time: "",
+        updated_at: "",
+        user_id:1},
+        user:{}
+      }],
+      user:
+      {admin: true,
+      apprentice: false,
+      created_at: "",
+      first_name: "",
+      id: 5,
+      last_name: "",
+      password: "",
+      pic: "",
+      updated_at: "",
+      username: ""}
+    }
   }
 
   changeHandler = (e)=>{

@@ -10,12 +10,13 @@ import ApptContainer from './ApptContainer'
 
 export default class SalonContainer extends Component {
 
-
   render(){
-    console.log('loggedin props', this.props.user.app);
+    console.log('loggedin props', this.props.user.app.user);
     return(
       <div>
-      {this.props.user.app.username}
+      <img src={this.props.user.app.user.user.pic} alt=''/>
+      <h1>{this.props.user.app.user.user.first_name} {this.props.user.app.user.user.last_name}</h1>
+      <ApptContainer id={this.props.user.app.user} appointments={this.props.user.app.user.appointments}/>
       </div>
     )
   }

@@ -18,7 +18,6 @@ export default class NewApptContainer extends Component {
   }
 
   render(){
-    console.log(this.state);
     return(
       <div>
       <h1>Book an Appointment!</h1>

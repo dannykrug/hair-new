@@ -12,7 +12,6 @@ import {BrowserRouter as Router, Route} from 'react-router-dom'
 class App extends Component {
 
   render() {
-    console.log(this.props);
     return (
       <div>
       <SalonContainer user={this.props}/>

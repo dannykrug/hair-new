@@ -3,6 +3,7 @@ import ApptCard from './ApptCard'
 
 export default class ApptContainer extends Component {
   render(){
+    console.log(this.props);
 
     let appointmentCards = this.props.appointments.map(appointment => <ApptCard key={appointment.client} appointment={appointment} id={appointment.day}/>)
 
