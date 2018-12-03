@@ -2,8 +2,9 @@ import React, {Component} from 'react'
 import App from './App';
 import {BrowserRouter as Router, Route, NavLink, withRouter} from 'react-router-dom'
 import NavBar from '../src/components/NavBar'
-import NewApptContainer from '../src/components/NewApptContainer'
 import Login from '../src/components/Login'
+import NewApptContainer from '../src/components/NewApptContainer'
+import LandingPage from '../src/components/LandingPage'
 
 const UserURL = 'http://localhost:3002/users'
 
@@ -99,10 +100,10 @@ class RootRouter extends Component {
   <Router>
   <div>
     <NavBar/>
-    <Route exact path='/' render={this.NewLogin}/>
+    <Route exact path='/' component={LandingPage}/>
     <Route exact path='/stylist-page' render={this.MainApp}/>
     <Route exact path='/newappt' component={NewApptContainer}/>
-    <Route exact path='/stylist-login' component={Login}/>
+    <Route exact path='/stylist-login' render={this.NewLogin}/>
   </div>
   </Router>
   </div>
