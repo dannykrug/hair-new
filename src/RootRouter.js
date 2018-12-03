@@ -5,6 +5,7 @@ import NavBar from '../src/components/NavBar'
 import Login from '../src/components/Login'
 import NewApptContainer from '../src/components/NewApptContainer'
 import LandingPage from '../src/components/LandingPage'
+import ApptDetailPage from '../src/components/ApptDetailPage'
 
 const UserURL = 'http://localhost:3002/users'
 
@@ -22,7 +23,7 @@ class RootRouter extends Component {
         appointment: {
         approved: true,
         created_at: "",
-        date: null,
+        date: '',
         email: "",
         first_name: "",
         id: 1,
@@ -93,17 +94,32 @@ class RootRouter extends Component {
     )
   }
 
+  DetailPage = () => {
+    console.log('detail state', this.state)
+    return(
+      <ApptDetailPage appt={this.state.user.appointments}/>
+    )
+  }
+
+  ApptPage = () => {
+    return(
+    <ApptDetailPage appointments={this.state.user.appointments}/>
+  )
+  }
+
 
   render(){
+    console.log('user appts', this.state.user.appointments);
     return(
       <div>
   <Router>
   <div>
     <NavBar/>
     <Route exact path='/' component={LandingPage}/>
-    <Route exact path='/stylist-page' render={this.MainApp}/>
     <Route exact path='/newappt' component={NewApptContainer}/>
     <Route exact path='/stylist-login' render={this.NewLogin}/>
+    <Route exact path='/stylist-page' render={this.MainApp}/>
+      <Route exact path='/appointments/:id' render={this.ApptPage}/>
   </div>
   </Router>
   </div>
