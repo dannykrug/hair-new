@@ -100,6 +100,12 @@ class StylistRouter extends Component {
   )
   }
 
+  AllAppts = () => {
+    return (
+      <StylistAppointments appointments={this.state.user.appointments}/>
+    )
+  }
+
   render(){
     console.log(this.state);
     return(
@@ -110,7 +116,7 @@ class StylistRouter extends Component {
       <Route exact path='/stylist' render={this.NewLogin}/>
       <Route exact path='/stylist-page' render={this.MainApp}/>
         <Route exact path='/appointments/:id' render={this.ApptPage}/>
-      <Route exact path ='/appointments' component={StylistAppointments}/>
+      <Route exact path ='/appointments' render={this.AllAppts}/>
       </div>
       </Router>
       </div>

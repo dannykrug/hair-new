@@ -9,7 +9,7 @@ export default class ApptContainer extends Component {
 
     return(
       <div>
-      <h3>Today's Appointments:</h3>
+      <h3>Upcoming Appointments:</h3>
       {appointmentCards}
       </div>
     )
