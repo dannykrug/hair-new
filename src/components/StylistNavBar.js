@@ -10,15 +10,16 @@ const link = {
   color:'white'
 }
 
-export default class NavBar extends Component {
-  render(){
+class StylistNavBar extends Component {
+  render () {
     return(
       <div>
-      <h2>NavBar</h2>
+      <h2>Stylist Nav</h2>
+
 
       <div>
         <NavLink
-          to='/'
+          to='/stylist-page'
           exact
           style={link}
           activeStyle={{
@@ -26,15 +27,25 @@ export default class NavBar extends Component {
           }}
         >Home</NavLink>
         <NavLink
-          to='/newappt'
+          to='/appointments'
           style={link}
           activeStyle={{
             background: 'darkGrey'
           }}
-          >Make a New Appointment</NavLink>
-      </div>
+          >Appointments</NavLink>
 
+      </div>
       </div>
     )
   }
 }
+
+export default StylistNavBar
+
+// <NavLink
+//   to='/newappt'
+//   style={link}
+//   activeStyle={{
+//     background: 'darkGrey'
+//   }}
+//   >Appointments</NavLink>
