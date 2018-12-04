@@ -101,9 +101,12 @@ class RootRouter extends Component {
     )
   }
 
-  ApptPage = () => {
+  ApptPage = (e) => {
+    const appt = this.state.user.appointments.find((appointment) => appointment.appointment.id === parseInt(e.match.params.id))
+    console.log('appt page props', e.match.params.id);
+    console.log(appt)
     return(
-    <ApptDetailPage appointments={this.state.user.appointments}/>
+    <ApptDetailPage appointment={appt}/>
   )
   }
 

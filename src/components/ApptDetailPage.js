@@ -8,12 +8,10 @@ class ApptDetailPage extends Component {
 
   render() {
     console.log('detail page props', this.props);
-    const appt = this.props.appointments.find((appointment) => appointment.id === this.props.appointments.id)
-
 
     return(
       <div>
-        <ApptDetails  appt={appt}/>
+        <ApptDetails appointment={this.props.appointment}/>
       </div>
     )
   }
