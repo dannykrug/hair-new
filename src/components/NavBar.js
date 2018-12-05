@@ -1,13 +1,14 @@
 import React, {Component} from 'react'
 import {NavLink} from 'react-router-dom'
 
-const link = {
-  width:'100px',
-  padding:'12px',
-  margin:'0 6px 6px',
-  background:'blue',
-  textDecoration: 'none',
-  color:'white'
+const menuitem = {
+ listStyle: 'none',
+ textDecoration: 'none',
+ fontFamily: 'Abel',
+ color: '#289bff',
+ fontSize: '24px',
+ fontWeight: 'bold',
+ padding: '0 20px 0 20px'
 }
 
 export default class NavBar extends Component {
@@ -18,16 +19,16 @@ export default class NavBar extends Component {
         <NavLink
           to='/'
           exact
-          style={link}
+          style={menuitem}
           activeStyle={{
-            background: 'darkGrey'
+            color: 'black'
           }}
         >Home</NavLink>
         <NavLink
           to='/newappt'
-          style={link}
+          style={menuitem}
           activeStyle={{
-            background: 'darkGrey'
+            color: 'black'
           }}
           >Make a New Appointment</NavLink>
       </div>

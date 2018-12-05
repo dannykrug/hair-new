@@ -1,13 +1,14 @@
 import React, {Component} from 'react'
 import {NavLink} from 'react-router-dom'
 
-const link = {
-  width:'100px',
-  padding:'12px',
-  margin:'0 6px 6px',
-  background:'blue',
+ const menuitem = {
+  listStyle: 'none',
   textDecoration: 'none',
-  color:'white'
+  fontFamily: 'Abel',
+  color: '#289bff',
+  fontSize: '24px',
+  fontWeight: 'bold',
+  padding: '0 20px 0 20px'
 }
 
 class StylistNavBar extends Component {
@@ -18,16 +19,16 @@ class StylistNavBar extends Component {
         <NavLink
           to='/stylist-page'
           exact
-          style={link}
+          style={menuitem}
           activeStyle={{
-            background: 'darkGrey'
+            color: 'black'
           }}
         >Home</NavLink>
         <NavLink
           to='/appointments'
-          style={link}
+          style={menuitem}
           activeStyle={{
-            background: 'darkGrey'
+            color: 'black'
           }}
           >Appointments</NavLink>
 
