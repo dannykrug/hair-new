@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import {Link, Route, Redirect, withRouter} from 'react-router-dom';
+import './Login.css'
 
 const UserURL = 'http://localhost:3002/users'
 
@@ -42,8 +43,11 @@ class Login extends Component {
 
   render(){
     return(
-      <div>
-        <form onSubmit={this.pageChangeSubmit}>
+      <div className='login-wrapper'>
+      <div className='bg-login-image'>
+      <div class='login-container'>
+      <div className='login'>
+        <form className='signup-fields' onSubmit={this.pageChangeSubmit}>
           <div>
             <input type='text' name='username' placeholder='username' onChange={this.props.changeHandler}/>
             <label name='username'>username</label>
@@ -54,6 +58,9 @@ class Login extends Component {
           </div>
           <input type='submit' value='login'/>
         </form>
+        </div>
+        </div>
+        </div>
       </div>
     )
   }

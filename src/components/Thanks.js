@@ -10,7 +10,7 @@ export default class Thanks extends Component {
       <div className='appt'>
       <div className='confirmation'>
       <h1>Thanks for booking!</h1>
-      <h3>We will call to confirm the day before your appointment.</h3>
+      <h5>We will call to confirm the day before your appointment.</h5>
       </div>
       </div>
       </div>

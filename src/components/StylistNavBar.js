@@ -14,9 +14,6 @@ class StylistNavBar extends Component {
   render () {
     return(
       <div>
-      <h2>Stylist Nav</h2>
-
-
       <div>
         <NavLink
           to='/stylist-page'
