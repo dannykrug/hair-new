@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+
+body{
+  background: #eee;
+}
+
+.bg-image{
+  width:100%;
+  height: 100vh;
+  background: url('https://media.timeout.com/images/101843079/image.jpg') no-repeat 0 100%;
+}
+
+.container{
+  width: 600px;
+  height: 600px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.appt-wrapper{
+  display: flex;
+  flex-direction: row;
+  font-family:Abel;
+  font-weight: 300;
+  background: #181818;
+  color: #f4f4f4;
+  overflow: hidden;
+}
+
+/* .form{
+  padding: 0.5rem;
+  height: 20rem;
+  display: block;
+  border: 1px solid #f4f4f4;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 20px;
+  background-color:rgba(0, 0, 0, 0.75);
+  color:#f4f4f4;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.5s;
+} */
+
+.appt{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  padding-bottom: 1rem;
+}
+
+.appt form{
+  width: 40%;
+  padding-bottom:6rem;
+}
+
+.appt label{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+.appt .signup-fields{
+  margin-bottom: 1.3rem;
+  width: 60%;
+  border-radius: 3px;
+  background: #181818;
+  border: 1px solid #555;
+  background-color:rgba(0, 0, 0, 0.85);
+  font-size: 2rem;
+  padding: 1rem;
+
+}
+
+.appt .confirmation{
+  margin-bottom: 1.3rem;
+  width: 100%;
+  border-radius: 3px;
+  background: #181818;
+  border: 1px solid #555;
+  background-color:rgba(0, 0, 0, 0.85);
+  font-size: 2rem;
+  padding: 3rem;
+
+}

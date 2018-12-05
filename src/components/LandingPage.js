@@ -7,8 +7,14 @@ import './LandingPage.css'
 class LandingPage extends Component {
   render() {
     return(
-      <div>
+      <div className='landing-wrapper'>
+      <div class='bg-image'>
+      <div class='container'>
+
       <Link to="/newappt" className="secondary-btn">Book an Appointment!</Link>
+
+      </div>
+      </div>
       </div>
     )
   }

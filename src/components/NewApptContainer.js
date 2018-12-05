@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import './NewApptContainer.css'
 
 const ApptURL = 'http://localhost:3002/appointments'
 
@@ -48,19 +49,23 @@ export default class NewApptContainer extends Component {
     .then(res => res.json())
     .then(console.log)
     // .then(console.log(this.state))
-    // .then(() => {this.props.history.push("/stylist-page")})
+    .then(() => {this.props.history.push("/thanks")})
 
     }
 
   render(){
     console.log(this.state);
     return(
-      <div>
-      <h1>Book an Appointment!</h1>
-        <form onSubmit={this.submitHandler}>
+      <div className='appt-wrapper'>
+      <div className='bg-image'>
+      <div className='container'>
+      <div className='appt'>
+        <form className='signup-fields' onSubmit={this.submitHandler}>
           <div>
             <label type='first_name'>First Name:</label>
             <input type='text' name='first_name' placeholder='First Name' onChange={this.changeHandler}/>
+            </div>
+            <div>
             <label type='last_name'>Last Name:</label>
             <input type='text' name='last_name' placeholder='Last Name' onChange={this.changeHandler}/>
           </div>
@@ -100,6 +105,9 @@ export default class NewApptContainer extends Component {
           </div>
           <input type='submit' value='Book It!'/>
         </form>
+        </div>
+        </div>
+        </div>
       </div>
     )
   }
