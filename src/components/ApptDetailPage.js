@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import ApptDetails from "./ApptDetails"
+import './Login.css'
 
 class ApptDetailPage extends Component {
 
@@ -10,7 +11,7 @@ class ApptDetailPage extends Component {
     console.log('detail page props', this.props);
 
     return(
-      <div>
+      <div className='bg-stylist-image'>
         <ApptDetails appointment={this.props.appointment}/>
       </div>
     )

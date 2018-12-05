@@ -11,7 +11,6 @@ class StylistApptContainer extends Component{
 
     return(
       <div>
-      <img src='https://i.pinimg.com/originals/54/d2/ca/54d2ca069391336e06df0216a653f366.jpg' alt='nah'/>
       {appointmentCards}
       </div>
     )

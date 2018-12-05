@@ -1,0 +1,20 @@
+.day-list {
+  margin-bottom: .5rem;
+  width: 93%;
+  border-radius: 3px;
+  background: #181818;
+  border: 1px solid #555;
+  background-color:rgba(192, 192, 192, 0.85);
+  padding: 1rem;
+  overflow: scroll;
+}
+
+.appointment-card {
+  margin-bottom: .5rem;
+  width: 88%;
+  border-radius: 3px;
+  background: #181818;
+  border: 1px solid #555;
+  background-color:rgba(128, 128, 0, 0.6);
+  padding: 1rem;
+}

@@ -44,7 +44,7 @@ class Login extends Component {
   render(){
     return(
       <div className='login-wrapper'>
-      <div className='bg-login-image'>
+      <div className='bg-stylist-image'>
       <div class='login-container'>
       <div className='login'>
         <form className='signup-fields' onSubmit={this.pageChangeSubmit}>
