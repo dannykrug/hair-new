@@ -82,7 +82,6 @@ export default class NewApptContainer extends Component {
             <select name='user_id'onChange={this.changeHandler}>
               <option>Select Stylist</option>
               <option value={5}>Franchely</option>
-              <option value={6}>Amy</option>
               <option value={7}>Lundy</option>
               <option value={8}>April</option>
             </select>

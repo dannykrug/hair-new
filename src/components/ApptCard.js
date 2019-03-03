@@ -38,6 +38,7 @@ export default class ApptCard extends Component {
           <h4>{this.props.appointment.appointment.first_name} {this.props.appointment.appointment.last_name}</h4>
           <p>{formatDate(this.date)}</p>
           <p>{formatTime(this.time)}</p>
+          <button>Delete</button>
           </div>
         </Link>
       </div>
